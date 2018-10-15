@@ -18,7 +18,10 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
   // });
 
   db.collection('Users').find({
-    
+
+    //- query here -
+    //name: 'Name',
+
   }).toArray().then((docs) => {
     console.log(JSON.stringify(docs, null, 2));
 
